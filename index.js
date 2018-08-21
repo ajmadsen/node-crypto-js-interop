@@ -37,3 +37,8 @@ const nodeDecrypt = NodeCrypto.decrypt(
   cryptojsEncrypted.iv
 );
 console.log('nodeDecrypt', nodeDecrypt);
+
+console.log(
+  'equivalent?',
+  cryptojsDecrypted.plainText === nodeDecrypt.plainText
+);
